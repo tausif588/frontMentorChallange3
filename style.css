@@ -1,0 +1,99 @@
+:root{
+    --Pale-blue: hsl(225, 100%, 90%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+body{   
+    
+ Font-size: 16px;
+ font-family: 'Red Hat Display', sans-serif;
+}
+.container{
+    max-width: 20rem;
+    margin: auto;
+    border-radius: 0.6rem;
+   margin-top: 4.5rem;
+}
+.main{
+    background: var(--Very-pale-blue);
+    
+    padding: 3rem 1rem;
+    border-radius: 0.6rem;
+    z-index: 2;
+}
+
+.img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+p{
+    color: black;
+}
+.second{
+    text-align: center;
+    padding: 1rem 1rem;
+    background:white;
+    border-radius: 0px 0px 10px 10px;
+}
+.second .anunual{
+    
+    border-radius: 0.6rem;
+    padding: 1rem 0rem;
+    display: flex;
+    position: relative;
+}
+.plan1>:nth-child(1){
+     position: absolute;
+     top: 1rem;
+     left: 0.3rem;
+    list-style: none;
+}
+.plan1>:nth-child(2){
+font-size: 18px;
+font-weight: 600;
+}
+.plan1>:nth-child(3){
+    opacity: 70%;
+}
+.plan1>li{
+   margin-left: 3.6rem;
+   list-style: none;
+}
+.plan2{
+   position: absolute;
+   right: 1.7rem;
+   top: 1.6rem;
+}
+.plan2>a{
+    font-weight: 600;
+}
+.button{
+    margin-top: 1rem;
+    background: var(--Bright-blue);
+    width:100%;
+    height: 3rem;
+    border-radius: 0.6rem;
+    box-shadow: 5px 5px 10px hsl(245, 30%, 48%);
+}
+.button>a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    top: 0.9rem;
+}
+p{
+    opacity: 70%;
+}
+@media only screen and (min-width:62rem){
+    body{
+        transition:1s;
+        background: var(--Very-pale-blue); 
+    }
+    .container{
+        max-width: 25rem;
+    }
+}
